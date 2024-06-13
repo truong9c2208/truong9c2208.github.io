@@ -1,0 +1,46 @@
+.aside-left {
+    width: 40%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--side-color);
+    border-radius: var(--border-radius-side);
+    margin-right: calc(var(--margin-side) / 2);
+    color: var(--text-color);
+    box-shadow: var(--card-shadow);
+    padding: var(--padding-item) 0;
+}
+
+.information {
+    padding: 1rem 0;
+}
+
+.title {
+    font-size: var(--font-size-medium);
+    padding: 0 1rem;
+}
+
+.text-box {
+    display: flex;
+    flex-wrap: nowrap;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 0.8rem 0;
+}
+
+.text-box p {
+    font-size: var(--font-size-extra-small);
+}
+
+.text-box a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.text-box svg {
+    width: 35px;
+    height: 35px;
+    fill: var(--text-color);
+    padding: 0 10px;
+}
