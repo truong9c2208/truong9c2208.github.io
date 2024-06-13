@@ -13,12 +13,13 @@
 }
 
 .information {
-    padding: 1rem 0;
+    margin: 0 .8rem;
 }
 
 .title {
     font-size: var(--font-size-medium);
     padding: 0 1rem;
+    margin-bottom: 1rem;
 }
 
 .text-box {
@@ -26,7 +27,7 @@
     flex-wrap: nowrap;
     /* justify-content: center; */
     align-items: center;
-    padding: 0.8rem 0;
+    padding: 0.3rem 0;
 }
 
 .text-box p {
