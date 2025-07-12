@@ -1,9 +1,23 @@
 .item-skill {
+    display: flex;
+    flex-direction: column;
     width: 100%;
 }
 
-.item-skill img {
-    width: 100%;
-    height: auto;
+.upper-half {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100%;
+    margin: 1rem 0;
+}
+
+.upper-half a {
+    margin: 0 1rem;
+}
+
+.upper-half img {
+    width: 60px;
+    height: 60px;
     border-radius: var(--border-radius-side);
 }

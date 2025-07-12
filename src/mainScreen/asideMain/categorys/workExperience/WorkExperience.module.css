@@ -6,5 +6,6 @@
 }
 
 .item-work-experience p {
+    color: var(--text-color);
     font-size: 35px;
 }

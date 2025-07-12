@@ -1,6 +1,18 @@
 .aside-left {
     width: 40%;
-    height: max-content;
+    /* height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--side-color);
+    border-radius: var(--border-radius-side);
+    margin-right: calc(var(--margin-side) / 2);
+    color: var(--text-color);
+    box-shadow: var(--card-shadow);
+    padding: var(--padding-item) 0; */
+}
+
+.container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -10,6 +22,18 @@
     color: var(--text-color);
     box-shadow: var(--card-shadow);
     padding: var(--padding-item) 0;
+}
+
+.statistics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.statistics img {
+    padding: 0.5rem 0.3rem;
+    box-shadow: var(--item-shadow);
 }
 
 .information {

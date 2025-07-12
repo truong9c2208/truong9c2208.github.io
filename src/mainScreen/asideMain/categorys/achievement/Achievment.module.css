@@ -5,7 +5,8 @@
 }
 
 .achievement {
-    background-image: var(--side-color);
+    /* background-image: var(--side-color); */
+    background-color: #363c46;
     border-radius: 25px;
     box-shadow: var(--item-shadow);
     display: flex;

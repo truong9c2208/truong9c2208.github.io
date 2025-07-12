@@ -2,9 +2,10 @@ import Style from "./Header.module.css";
 import { useCallback, useState } from "react";
 
 import coverImage from "../assets/cover-image.jpg";
-import avatar from "../assets/avatar.jpg";
+import avatar from "../assets/avatar.png";
 
 import FacebookIcon from '@mui/icons-material/Facebook';
+import TelegramIcon from '@mui/icons-material/Telegram';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import XIcon from '@mui/icons-material/X';
 
@@ -47,6 +48,12 @@ export default function Header() {
                         <a href="https://www.facebook.com/shibasama.dev" target="_blank">
                             <FacebookIcon />
                             <div className={Style["contact-text"]}>Facebook</div>
+                        </a>
+                    </div>
+                    <div className={Style["contact-button"]}>
+                        <a href="https://t.me/Shibaa05" target="_blank">
+                            <TelegramIcon />
+                            <div className={Style["contact-text"]}>Telegram</div>
                         </a>
                     </div>
                     <div className={Style["contact-button"]}>

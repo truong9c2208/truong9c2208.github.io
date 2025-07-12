@@ -65,8 +65,6 @@
 }
 
 .avatar {
-    width: 150px;
-    height: 150px;
     border-radius: 50%;
     border: 0.5vh solid var(--side-color);
     position: relative;
@@ -74,8 +72,9 @@
 }
 
 .avatar img {
-    width: 100%;
-    height: auto;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
     border-radius: 50%;
 }
 
