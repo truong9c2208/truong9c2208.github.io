@@ -1,0 +1,18 @@
+.Footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.Footer .Content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Footer .Logo {
+    width: 100px;
+    height: 100px;
+}

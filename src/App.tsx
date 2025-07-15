@@ -1,17 +1,14 @@
-import Header from './header/Header';
-import Main from './mainScreen/Main'
-
-export type ItemType = {
-  id: number;
-  name: string;
-  component: React.ReactNode;
-}
+import Style from './App.module.css';
+import HomePage from './pages/Home';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="container">
-      <Header />
-      <Main />
+    <div className={Style.Layout}>
+      <div className={Style.Container}>
+        <HomePage />
+        <Footer />
+      </div>
     </div>
   )
 }

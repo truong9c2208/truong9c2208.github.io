@@ -1,0 +1,264 @@
+.HomePage {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.HomePage .Main {
+    width: calc(100% - 2rem);
+    min-height: 700px;
+    padding: 0 2rem;
+    position: relative;
+    box-shadow: 0 1px #363636;
+}
+
+.HomePage .Main .Banner {
+    width: 100%;
+    height: 700px;
+}
+
+.HomePage .Main .Banner .BannerInner {
+    margin-right: 4rem;
+    top: -40px !important;
+    background-size: 400px !important;
+    background-position: top right !important;
+    background-repeat: no-repeat !important;
+}
+
+.Info {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 4rem;
+    bottom: 40%;
+}
+
+.Info .Heading {
+    color: #FF9B17;
+    text-shadow: 0 0 4px rgba(255, 255, 255, .1), 0 0 14px rgba(130, 168, 236, .2);
+}
+
+.Info .Description {
+    width: 20vw;
+}
+
+.ListContact {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.Section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 1rem 0 1rem;
+    box-shadow: 0 1px #363636;
+}
+
+.Section .SectionHeading {
+    color: #FF9B17;
+    padding: 0 1rem 0.2rem 1rem;
+    box-shadow: 0 2px #363636;
+    margin-bottom: 1rem;
+}
+
+.Section .SectionDescription {
+    width: 80%;
+    text-align: center;
+}
+
+.AboutContainer {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2rem 0;
+    gap: 2rem;
+}
+
+.AboutContainer .AboutLeftSide {
+    width: 40%;
+    height: fit-content;
+    background: #080808;
+    border-radius: 30px;
+}
+
+.AboutContainer .AboutLeftSide .AboutLeftInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.AboutContainer .AboutLeftSide .AboutLeftInfo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #b4a083;
+    margin-bottom: 2rem;
+}
+
+.AboutContainer .AboutRightSide {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.AboutContainer .AboutRightSide .AboutText {
+    width: 80%;
+    text-align: center;
+}
+
+.AboutContainer .AboutRightSide .BackgroundImage {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.AboutContainer .AboutRightSide .BackgroundImage img {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.AboutContainer .AboutRightSide .InfoGrid {
+    width: 100%;
+}
+
+.AboutContainer .AboutRightSide .InfoItem {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    margin: 0 1rem;
+}
+
+.TechCard {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.TechLogo {
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.Projects {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.ProjectImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+}
+
+.ProjectTech {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0.5rem;
+    gap: 0.3rem;
+
+    span {
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+    }
+}
+
+.ProjectInfo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.8rem;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.Action {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 0.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .HomePage .Main {
+        width: 100%;
+        padding: 0;
+    }
+
+    .HomePage .Main .Banner {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .HomePage .Main .Banner .BannerInner {
+        margin-right: 0rem;
+        background-size: 400px !important;
+    }
+
+    .Info {
+        left: 2rem;
+        bottom: 30%;
+    }
+
+    .Info .Description {
+        width: 50vw;
+    }
+}
+
+@media only screen and (max-width: 481px) {
+    .Info {
+        left: 1rem;
+        bottom: 20%;
+    }
+
+    .Info .Description {
+        width: 90vw;
+    }
+
+    .AboutContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .AboutContainer .AboutLeftSide,
+    .AboutContainer .AboutRightSide {
+        width: 100%;
+    }
+
+    .AboutContainer .AboutRightSide {
+        margin-top: 2rem;
+    }
+
+    .AboutContainer .AboutRightSide .InfoItem {
+        align-items: center;
+    }
+    
+}
