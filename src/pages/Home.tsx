@@ -31,6 +31,17 @@ import { PiGithubLogoFill, PiRabbitLight } from "react-icons/pi";
 import { IoIosMail, IoLogoTwitter } from "react-icons/io";
 import { BaseButtonProps } from '@radix-ui/themes/components/_internal/base-button';
 
+const thirdPlaceSvg = <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 64 64" viewBox="0 0 64 64" id="third-place"><path d="M32,9c-8.27,0-15,6.73-15,15c0,8.27,6.73,15,15,15s15-6.73,15-15C47,15.73,40.27,9,32,9z M37.25,27.25
+		c0,2.895-2.355,5.25-5.25,5.25c-2.123,0-4.025-1.267-4.846-3.228c-0.426-1.019,0.054-2.19,1.073-2.617
+		c1.017-0.429,2.19,0.054,2.617,1.073C31.04,28.197,31.494,28.5,32,28.5c0.689,0,1.25-0.561,1.25-1.25S32.689,26,32,26
+		c-1.104,0-2-0.896-2-2s0.896-2,2-2c0.689,0,1.25-0.561,1.25-1.25S32.689,19.5,32,19.5c-0.506,0-0.959,0.302-1.154,0.77
+		c-0.426,1.019-1.596,1.5-2.617,1.075c-1.019-0.426-1.5-1.597-1.075-2.617C27.974,16.767,29.875,15.5,32,15.5
+		c2.895,0,5.25,2.355,5.25,5.25c0,1.226-0.423,2.355-1.13,3.25C36.827,24.895,37.25,26.024,37.25,27.25z"></path><path d="M57.59,52.55l-7.01-15.02C53.36,33.73,55,29.05,55,24C55,11.32,44.68,1,32,1S9,11.32,9,24c0,5.05,1.64,9.73,4.42,13.53
+		L6.41,52.55C6.1,53.22,6.18,54,6.63,54.59c0.44,0.59,1.17,0.89,1.9,0.78l9.37-1.43l4.93,8.1c0.36,0.6,1.01,0.96,1.71,0.96h0.11
+		c0.74-0.04,1.39-0.49,1.7-1.15L32,49.73l5.65,12.12c0.31,0.66,0.96,1.11,1.7,1.15h0.11c0.7,0,1.35-0.36,1.71-0.96l4.93-8.1
+		l9.37,1.43c0.73,0.11,1.46-0.19,1.91-0.78C57.82,54,57.9,53.22,57.59,52.55z M32,43c-10.48,0-19-8.52-19-19S21.52,5,32,5
+		s19,8.52,19,19S42.48,43,32,43z"></path></svg>
+
 const ListContact = [
     {
         name: "Github",
@@ -301,6 +312,39 @@ export default function HomePage() {
                             <Text className={Style.Bio} size="3" color="brown">
                                 Software Developer
                             </Text>
+
+                            <div className={Style.Achievements}>
+                                <div className={Style.AchievementItem}>
+                                    <div className={Style.AchievementContent}>
+                                        <div className={Style.AchievementIcon}>
+                                            {thirdPlaceSvg}
+                                        </div>
+                                        <Text size="4" color="gray" style={{ textAlign: 'center' }}>
+                                            Excellent student at the provincial level <b>2022</b>
+                                        </Text>
+                                    </div>
+                                </div>
+                                <div className={Style.AchievementItem}>
+                                    <div className={Style.AchievementContent}>
+                                        <div className={Style.AchievementIcon}>
+                                            {thirdPlaceSvg}
+                                        </div>
+                                        <Text size="4" color="gray" style={{ textAlign: 'center' }}>
+                                            Provincial level science and technology <b>2022</b>
+                                        </Text>
+                                    </div>
+                                </div>
+                                <div className={Style.AchievementItem}>
+                                    <div className={Style.AchievementContent}>
+                                        <div className={Style.AchievementIcon}>
+                                            {thirdPlaceSvg}
+                                        </div>
+                                        <Text size="4" color="gray" style={{ textAlign: 'center' }}>
+                                            Excellent student at the provincial level <b>2023</b>
+                                        </Text>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div className={Style.AboutRightSide}>
@@ -328,7 +372,7 @@ export default function HomePage() {
                                 sm: "2",
                                 xs: "1"
                             }}
-                            >
+                        >
                             {Info.map((item, index) => (
                                 <div key={index} className={Style.InfoItem}>
                                     <Text size="2" color="gray">

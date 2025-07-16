@@ -102,6 +102,40 @@
     margin-bottom: 2rem;
 }
 
+.AboutContainer .AboutLeftSide .AboutLeftInfo .Achievements {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.AboutContainer .AboutLeftSide .AboutLeftInfo .Achievements .AchievementItem {
+    width: 60%;
+    border: 1px solid #b4a083;
+    border-radius: 10px;
+}
+
+.AboutLeftSide .AboutLeftInfo .Achievements .AchievementItem .AchievementContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+}
+
+.AboutLeftInfo .Achievements .AchievementItem .AchievementContent .AchievementIcon {
+    display: flex;
+    justify-content: center;
+}
+
+.AboutLeftInfo .Achievements .AchievementItem .AchievementContent .AchievementIcon svg {
+    width: 30px;
+    height: 30px;
+    fill: #FF9B17;
+}
+
 .AboutContainer .AboutRightSide {
     width: 60%;
     display: flex;
